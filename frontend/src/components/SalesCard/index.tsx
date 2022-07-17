@@ -18,6 +18,8 @@ function SalesCard() {
 
     const [sales, setSales] = useState<sale[]>([]);
 
+    const dmin = minDate.toDateString
+
     console.log(minDate);
 
     useEffect(() => {
