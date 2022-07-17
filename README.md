@@ -1,2 +1,2 @@
 # dsmeta
-Projeto da Semana Spring React
+Projeto da Semana Spring React @devsuperior
