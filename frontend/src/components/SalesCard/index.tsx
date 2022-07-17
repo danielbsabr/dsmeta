@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { sale } from "../../models/sales";
+import { Sale } from "../../models/sale";
 import { BASE_URL } from "../../utils/request";
 import NotificationButton from '../NotificationButton';
 import './styles.css';
@@ -15,7 +15,7 @@ function SalesCard() {
     const [minDate, setMinDate] = useState(min);
     const [maxDate, setMaxDate] = useState(max);
 
-    const [sales, setSales] = useState<sale[]>([]);
+    const [sales, setSales] = useState<Sale[]>([]);
 
     useEffect(() => {
 
@@ -75,7 +75,7 @@ function SalesCard() {
                                     <td>R$ {sale.amount.toFixed(2)}</td>
                                     <td>
                                         <div className="dsmeta-red-btn-container">
-                                            <NotificationButton />
+                                            <NotificationButton saleID={sale.id}/>
                                         </div>
                                     </td>
                                 </tr>
