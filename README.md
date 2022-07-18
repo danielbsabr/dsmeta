@@ -1,6 +1,3 @@
-# dsmeta
-Projeto da Semana Spring React @devsuperior
-
 <h1 align="center">DSMeta</h1>
 
 # Tabela de conteúdos
